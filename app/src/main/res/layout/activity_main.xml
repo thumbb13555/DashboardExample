@@ -12,13 +12,22 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.jetec.speeddashboardexample.DashBoardView
+<!--        <com.jetec.speeddashboardexample.DashBoardView-->
+<!--            android:id="@+id/myDashBoard"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_height="350dp"-->
+<!--            android:layout_marginBottom="50dp"/>-->
+
+        <com.jetec.speeddashboardexample.DashBoard2
             android:id="@+id/myDashBoard"
             android:layout_width="match_parent"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_height="350dp"
             android:layout_marginBottom="50dp"/>
+
 
         <SeekBar
             android:id="@+id/seekBar"

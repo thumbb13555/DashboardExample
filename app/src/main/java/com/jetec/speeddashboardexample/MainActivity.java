@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
         SeekBar mSeekBar = (SeekBar) findViewById(R.id.seekBar);
         EditText mEdit = findViewById(R.id.editText);
         Button btText = findViewById(R.id.button);
-        DashBoardView mBoard = (DashBoardView) findViewById(R.id.myDashBoard);
+//        DashBoardView mBoard = (DashBoardView) findViewById(R.id.myDashBoard);
+        DashBoard2 mBoard = (DashBoard2) findViewById(R.id.myDashBoard);
         mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {

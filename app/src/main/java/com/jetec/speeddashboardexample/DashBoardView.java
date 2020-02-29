@@ -58,15 +58,16 @@ public class DashBoardView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        paint.setAntiAlias(true);
-        int bottomColor = Color.parseColor("#C9C9C9");
+        paint.setAntiAlias(true);//消除鋸齒
+        int bottomColor = Color.parseColor("#C9C9C9");//設置顏色
         paint.setColor(bottomColor);//設置底部顏色
         paint.setStrokeJoin(Paint.Join.ROUND);//設置畫筆畫出的形狀
         paint.setStrokeCap(Paint.Cap.ROUND);//使線的尾端具有圓角
         paint.setStyle(Paint.Style.STROKE);//使圓為空心
         paint.setStrokeWidth(dp2px(40));//設置外圍線的粗度
-        RectF mRecF = new RectF(10 + dp2px(20), 10 + dp2px(20), getWidth() - 10 - dp2px(20), getHeight() - 10);
-        canvas.drawArc(mRecF, 180, 180, false, paint);
+        RectF mRecF = new RectF(10 + dp2px(20), 10 + dp2px(20)
+                , getWidth() - 10 - dp2px(20), getHeight() - 10);//畫一個扇形
+        canvas.drawArc(mRecF, 180, 180, false, paint);//將扇形畫至畫布上
 
 
         if (!setColor) {
